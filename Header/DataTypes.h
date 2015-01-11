@@ -7,7 +7,8 @@ typedef enum EchoType
 {
   N, /* Normal */ 
   C, /* Conformation */
-  E, /* Error */
-  W /* Warning */
+  W, /* Warning */
+  E /* Error */
+  
 };
 #endif
