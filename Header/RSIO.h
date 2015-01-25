@@ -10,7 +10,7 @@ class RSIO
 {
  public:
   RSIO();
-  int Echo(EchoType type, char *buff,...);
+  int Echo(EchoType type, const char *buff,...);
   ~RSIO();
  protected:
 };

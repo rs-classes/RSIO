@@ -3,7 +3,7 @@ RSIO io;
 int main()
 {
   EchoType etype = N;
-  io.Echo(etype, "n test %d\r\n",1,1);
+  io.Echo(etype, "n test %d\r\n",1);
   
   etype = C;
   io.Echo(etype, "c test %d\r\n",2);

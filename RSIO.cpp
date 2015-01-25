@@ -2,9 +2,8 @@
 #include "Header/RSIO.h"
 RSIO::RSIO()
 {
-  
 }
-int RSIO::Echo(EchoType type, char *buff,...)
+int RSIO::Echo(EchoType type, const char *buff,...)
 {
   va_list arglist;
   
@@ -28,6 +27,7 @@ int RSIO::Echo(EchoType type, char *buff,...)
   printf(buff, arglist);
   printf(KNRM);
   va_end(arglist);
+  return 0;
 }
   
  RSIO::~RSIO()
