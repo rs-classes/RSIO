@@ -11,6 +11,7 @@ class RSIO
 {
  public:
   RSIO();
+  int Echo(const char *buff,...);
   int Echo(EchoType type, const char *buff,...);
   ~RSIO();
  protected:

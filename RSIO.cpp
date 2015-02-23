@@ -3,6 +3,12 @@
 RSIO::RSIO()
 {
 }
+int RSIO::Echo(const char *buff,...)
+{
+  va_list arglist;
+  Echo(EchoType.N, buff, arglist);
+  va_end(arglist);
+}
 int RSIO::Echo(EchoType type, const char *buff,...)
 {
   va_list arglist;
